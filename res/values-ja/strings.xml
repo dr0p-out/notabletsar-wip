@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="nts">NTS</string>
+  <string name="reconnect">まずはUSB接続を切断、再接続してください！</string>
+  <string name="idle">PCへの接続を待機中…</string>
+  <string name="detected">接続を検出しました</string>
+  <string name="denied">アクセス権が拒否されました</string>
+  <string name="prepare">必要の時、デバイスの画面回転を調整してください。\n\nOKの場合は、「いこう」ボタンを押してください。画面は真っ黒になります。</string>
+  <string name="start">いこう</string>
+  <string name="rotate">デバイスを横向きに回転してください！</string>
+  <string name="ready">タッチしてPCをコントロールできます</string>
+  <string name="disconnected">USB接続が切断されました</string>
+</resources>

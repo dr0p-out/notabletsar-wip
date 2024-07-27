@@ -33,7 +33,6 @@ res.apk: AndroidManifest.xml res.zip $(ANDROIDJAR)
 	$(AAPT) link -I $(ANDROIDJAR) \
 		--manifest $< \
 		--debug-mode \
-		--target-sdk-version $(ANDROID_PLATFORM) \
 		--java java \
 		$(AAPTLDFLAGS) res.zip -o $@
 

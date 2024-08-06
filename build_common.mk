@@ -29,8 +29,9 @@ SIGNFLAGS ?= --key testkey.pk8 --cert testkey.x509.pem
 res.zip: $(shell find res -type f)
 	$(AAPT) compile --dir res $(AAPTCFLAGS) -o $@
 
-res.apk: AndroidManifest.xml res.zip $(ANDROIDJAR)
+res.apk: AndroidManifest.xml res.zip $(shell find assets -type f) $(ANDROIDJAR)
 	$(AAPT) link -I $(ANDROIDJAR) \
+		-A assets \
 		--manifest $< \
 		--debug-mode \
 		--java java \

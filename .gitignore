@@ -1,5 +1,5 @@
 /.clangd
-/build.sh
+/*.sh
 
 /*.zip
 /*.apk
@@ -7,6 +7,6 @@ R.java
 *.class
 /*.dex
 /*.idsig
-*.d
-*.o
-*.so
+/jni/*.d
+/jni/*.o
+/lib/*/*.so

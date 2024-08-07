@@ -1,4 +1,7 @@
 CompileFlags:
   Add:
-    - -I/usr/lib/jvm/java-17-openjdk/include
-    - -I/usr/lib/jvm/java-17-openjdk/include/linux
+    - --target=aarch64
+    - -nostdinc
+    - -I/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+    - -I/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+    - -I/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android

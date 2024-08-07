@@ -9,4 +9,4 @@ R.java
 /*.idsig
 /jni/*.d
 /jni/*.o
-/lib/*/*.so
+/lib/*/libapp_jni.so

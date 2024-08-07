@@ -59,9 +59,9 @@ $(JNILIB): $(OBJS)
 	mkdir -p $(shell dirname $(JNILIB))
 	$(CC) -shared $(LDFLAGS) $^ -o $@
 
-merged.apk: res.apk classes.dex $(JNILIB)
+merged.apk: res.apk classes.dex $(JNILIB) $(EXTRALIBS)
 	cp -fa $< $@
-	zip -u9 $(ZIPFLAGS) $@ classes.dex $(JNILIB)
+	zip -u9 $(ZIPFLAGS) $@ classes.dex $(JNILIB) $(EXTRALIBS)
 
 aligned.apk: merged.apk
 	$(ZIPALIGN) -f $(ZAFLAGS) 4 $< $@

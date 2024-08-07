@@ -13,6 +13,8 @@ CFLAGS += -O2 -Wall -Wextra
 #CFLAGS += -Werror
 #LDFLAGS += -s
 
+#EXTRALIBS += lib/$(ANDROID_ABI)/libfoo.so
+
 #KEYS := $(KEYSTORE)
 #SIGNFLAGS := --ks $(KEYSTORE)
 

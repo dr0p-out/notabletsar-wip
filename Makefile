@@ -6,7 +6,6 @@ AAPTLDFLAGS += --target-sdk-version 34
 #AAPTLDFLAGS += --version-name $(APP_VER)
 #AAPTLDFLAGS += --version-code $(APP_VERCODE)
 BYTECODE_VER := 17
-DXFLAGS += --no-desugaring
 #DXFLAGS += --release
 
 CFLAGS += -O2 -Wall -Wextra

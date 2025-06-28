@@ -54,7 +54,7 @@ classes.dex: $(ANDROIDJAR) $(JAVASRCS) | res.apk
 # NOTE: headers are updated while building classes.dex
 jni/%.o: jni/%.c | classes.dex
 	$(CC) -MD -MT $@ -MP -MF $(patsubst %.c,%.d,$<) \
-		$(CPPFLAGS) -fPIC -c $(CFLAGS) $< -o $@
+		$(CPPFLAGS) -fvisibility=hidden -fPIC -c $(CFLAGS) $< -o $@
 
 $(JNILIB): $(OBJS)
 	mkdir -p $(shell dirname $(JNILIB))

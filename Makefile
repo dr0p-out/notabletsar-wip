@@ -8,8 +8,10 @@ AAPTLDFLAGS += --target-sdk-version 35
 BYTECODE_VER := 17
 #DXFLAGS += --release
 
+#CFLAGS += -flto
 CFLAGS += -O2 -Wall -Wextra
 #CFLAGS += -Werror
+#LDFLAGS += -flto
 #LDFLAGS += -s
 
 #EXTRALIBS += lib/$(ANDROID_ABI)/libfoo.so
